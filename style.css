@@ -1,0 +1,146 @@
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+*{
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--backgrond);
+  color: var(--text-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  width: 100%;
+  height: 5.85rem;
+
+  position: absolute;
+  left: -0.3rem;
+  top: 3.7rem;
+
+  border-bottom: 1px solid var(--border);
+}
+
+header .navigation-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 18.4rem;
+}
+
+main h1{
+  width: 37.3rem;
+  height: 12.8rem;
+
+  font-size: 3rem;
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  line-height: 4.1rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+
+  margin-bottom: 8.8rem;
+}
+
+main button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  gap: 1rem;
+
+  width: auto;
+  height: 3.5rem;
+
+  border: 1px solid var(--button);
+  border-radius: .6rem;
+  color: var(--text-color);
+  background-color: var(--backgrond);
+  cursor: pointer;
+
+  margin-bottom: 9.8rem;
+}
+main button p{
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+main .subtitle{
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+
+  text-align: center;
+  width: 34.6rem;
+  height: 12.9rem;
+
+  margin-bottom: 2.5rem;
+}
+main .subtitle h2{
+
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 6.8rem;
+  letter-spacing: -0.03em;
+
+  color: var(--text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main .subtitle h2 ~ h2{
+  color: black;
+  text-shadow: 
+  -1px -1px 0 var(--button), 
+  1px -1px 0 var(--button), 
+  -1px 1px 0 var(--button), 
+  1px 1px 0 var(--button);
+}
+main #imgCoffee{
+  width: 100vw;
+  max-width: 74.8rem;
+}
+
+main .bg-subtitle{
+  position: absolute;
+  bottom: 0;
+}
+main .bg-subtitle svg{
+
+  width: 32.1rem;
+  height: 32.1rem;
+
+  background-color: #996DFF;
+  filter: blur(200px);
+  
+}
