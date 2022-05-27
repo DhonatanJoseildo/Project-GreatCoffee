@@ -3,8 +3,8 @@
   --text-color: #FFF;
   --button: #8257E5;
   --border: #29292E;
-  --border-menu-mobile: #A8A8B3;
-  --text-color-menu-mobile: #E1E1E6;
+  --text-menu-mobile: #A8A8B3;
+  --text-hover-menu-mobile: #E1E1E6;
 }
 
 *{
@@ -22,7 +22,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-header{
+header .navigation-menu{
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -31,19 +31,21 @@ header{
   height: 5.85rem;
 
   position: absolute;
-  left: -0.3rem;
+  left: 0;
   top: 3.7rem;
 
   border-bottom: 1px solid var(--border);
 }
 
-header .navigation-menu{
+header .navigation-menu .logoAndOpen{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
 }
-
+header .navigation-menu .open-menu{
+  cursor: pointer;
+}
 main{
   display: flex;
   flex-direction: column;
@@ -128,7 +130,8 @@ main .subtitle h2 ~ h2{
 }
 main #imgCoffee{
   width: 100vw;
-  max-width: 74.8rem;
+  max-width: 79.78rem;
+  max-height: 50.647rem;
 }
 
 main .bg-subtitle{
@@ -143,4 +146,56 @@ main .bg-subtitle svg{
   background-color: #996DFF;
   filter: blur(200px);
   
+}
+
+/*=========== Menu-Mobile ==============*/
+
+.navigation-menu #menuMobile{
+  position: absolute;
+  top: 10.4rem;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #000;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+}
+.navigation-menu #menuMobile.open{
+  visibility: visible;
+  opacity: 1;
+}
+.navigation-menu #menuMobile ul{
+  list-style: none;
+}
+
+.navigation-menu #menuMobile ul li{
+  border-bottom: 1px solid var(--border);
+  padding: 1.8rem 0 1.4rem 2.78rem;
+  position: relative;
+}
+
+.navigation-menu #menuMobile ul li:hover > a{
+  color: var(--text-hover-menu-mobile);
+  font-weight: 700;
+}
+.navigation-menu #menuMobile ul li:hover::before{
+  content: '';
+  width: .5rem;
+  height: 5.6rem;
+  background-color: #8257E5;
+
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+.navigation-menu #menuMobile ul li a{
+  font-family: Manrope;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  color: var(--text-menu-mobile);
+  text-decoration: none;
 }
