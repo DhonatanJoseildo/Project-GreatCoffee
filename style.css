@@ -180,16 +180,24 @@ main .bg-subtitle svg{
   color: var(--text-hover-menu-mobile);
   font-weight: 700;
 }
-.navigation-menu #menuMobile ul li:hover::before{
+
+.navigation-menu #menuMobile ul li::before{
   content: '';
   width: .5rem;
-  height: 5.6rem;
+  height: 0%;
   background-color: #8257E5;
 
   position: absolute;
   top: 0;
   left: 1rem;
+
+  transition: height 0.3s;
 }
+
+.navigation-menu #menuMobile ul li:hover::before{
+  height: 100%;
+}
+
 .navigation-menu #menuMobile ul li a{
   font-family: Manrope;
   font-size: 1.8rem;
