@@ -70,32 +70,6 @@ main h1{
   margin-bottom: 8.8rem;
 }
 
-main button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 3rem;
-  gap: 1rem;
-
-  width: auto;
-  height: 3.5rem;
-
-  border: 1px solid var(--button);
-  border-radius: .6rem;
-  color: var(--text-color);
-  background-color: var(--backgrond);
-  cursor: pointer;
-
-  margin-bottom: 9.8rem;
-}
-main button p{
-  font-family: Manrope, sans-serif;
-  font-weight: 800;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
 
 main .subtitle{
   display: flex;
@@ -206,4 +180,88 @@ main .bg-subtitle svg{
 
   color: var(--text-menu-mobile);
   text-decoration: none;
+}
+.navigation-menu button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  gap: 1rem;
+
+  width: auto;
+  height: 3.5rem;
+
+  border: 1px solid var(--button);
+  border-radius: .6rem;
+  color: var(--text-color);
+  background-color: var(--backgrond);
+  cursor: pointer;
+
+  margin-bottom: 9.8rem;
+}
+.navigation-menu button p{
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/*========== media ===============*/
+
+@media (min-width: 1024px){
+  body{
+    overflow: auto;
+  }
+  nav.navigation-menu{
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+  }
+  nav.navigation-menu div#menuMobile{
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+    filter: initial;
+    width: fit-content;
+    height: inherit;
+  }
+  nav.navigation-menu .logoAndOpen{
+    width: initial;
+  }
+
+  nav.navigation-menu #menuMobile ul{
+    display: flex;
+    justify-content: center;
+    gap: 3.243rem;
+  }
+  nav.navigation-menu #menuMobile ul li{
+    padding: 1.6rem;
+    border: none;
+  }
+  nav.navigation-menu #menuMobile ul li a{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 00.02em;
+
+    color: var(--text-color);
+  }
+
+  header .navigation-menu div.open-menu{
+    display: none;
+  }
+  nav.navigation-menu button{
+    margin-bottom: 0;
+  }
 }

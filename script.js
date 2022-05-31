@@ -1,7 +1,7 @@
 const menuWrapper = document.querySelector('.open-menu')
 let imgOpenMenu = document.querySelector('.open-menu img')
 menuWrapper.addEventListener('click', openMenu)
-console.log(imgOpenMenu)
+
 function openMenu() {
 
   menuMobile.classList.toggle('open')
@@ -13,4 +13,11 @@ function openMenu() {
   }
   
   
+}
+const logoImg = document.querySelector('nav.navigation-menu .logo img')
+
+function toggleImg() {
+  if (s) {
+    
+  }
 }
