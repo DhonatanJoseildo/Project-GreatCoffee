@@ -15,9 +15,3 @@ function openMenu() {
   
 }
 const logoImg = document.querySelector('nav.navigation-menu .logo img')
-
-function toggleImg() {
-  if (s) {
-    
-  }
-}

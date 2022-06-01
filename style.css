@@ -47,6 +47,7 @@ header .navigation-menu .open-menu{
   cursor: pointer;
 }
 main{
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +68,8 @@ main h1{
   letter-spacing: 0.02em;
   color: var(--text-color);
 
-  margin-bottom: 8.8rem;
+  position: absolute;
+  top: 0;
 }
 
 
@@ -80,6 +82,8 @@ main .subtitle{
   width: 34.6rem;
   height: 12.9rem;
 
+  position: absolute;
+  top: 53.3rem;
   margin-bottom: 2.5rem;
 }
 main .subtitle h2{
@@ -106,6 +110,9 @@ main #imgCoffee{
   width: 100vw;
   max-width: 79.78rem;
   max-height: 50.647rem;
+
+  position: absolute;
+  bottom: 0;
 }
 
 main .bg-subtitle{
@@ -197,7 +204,8 @@ main .bg-subtitle svg{
   background-color: var(--backgrond);
   cursor: pointer;
 
-  margin-bottom: 9.8rem;
+  position: absolute;
+  top: 40rem;
 }
 .navigation-menu button p{
   font-family: Manrope, sans-serif;
@@ -214,10 +222,12 @@ main .bg-subtitle svg{
   body{
     overflow: auto;
   }
+
   nav.navigation-menu{
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: none;
+    width: 100%;
   }
   nav.navigation-menu div#menuMobile{
     margin: 0;
@@ -239,7 +249,9 @@ main .bg-subtitle svg{
   nav.navigation-menu .logoAndOpen{
     width: initial;
   }
-
+  nav.navigation-menu .logoAndOpen .logo{
+    cursor: pointer;
+  }
   nav.navigation-menu #menuMobile ul{
     display: flex;
     justify-content: center;
@@ -262,6 +274,31 @@ main .bg-subtitle svg{
     display: none;
   }
   nav.navigation-menu button{
+    box-sizing: border-box;
     margin-bottom: 0;
+    padding: 1.1rem 3.8rem;
+  }
+  nav.navigation-menu button p{
+    width: 9.6rem;
+    height: 1.5rem;
+  }
+  nav.navigation-menu button .img-get-coffee{
+    display: none;
+  }
+
+  nav.navigation-menu #menuMobile ul li::before{
+    width: 0%;
+  
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+  
+    transition: width 0.3s;
+  }
+  
+  nav.navigation-menu #menuMobile ul li:hover::before{
+    width: 100%;
+    height: .5rem;
   }
 }
