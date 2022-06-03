@@ -21,6 +21,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 header .navigation-menu{
   display: flex;
@@ -111,12 +112,12 @@ main #imgCoffee{
   max-height: 50.647rem;
 
   position: absolute;
-  bottom: 0;
+  top: 68.7rem;
 }
 
 main .bg-effect{
   position: absolute;
-  bottom: 0;
+  top: 60rem;
 }
 main .bg-effect.desktop{
   display: none;
@@ -313,27 +314,30 @@ main .bg-effect svg{
   }
 
   body main .subtitle{
-    top: 14rem;
+    top: 11rem;
     width: 54.8rem;
+    height: 20.4rem;
   }
   body main .subtitle h2{
     font-size: 8rem;
     line-height: 10.9rem;
   }
   body main #imgCoffee{
-    width: 79.87rem;
+    width: 79.878rem;
+    height: 50.647rem;
+    top: 28.9rem;
   }
 
   main .bg-effect.desktop{
     display: initial;
     top: -63px;
-    left: 368px;
+    left: 357px;
     width: 32.1rem;
     height: 32.1rem;
   }
 
   main .bg-effect{
-    bottom: 0;
+    top: 46.5rem;
     right: 350px;
   }
 }
