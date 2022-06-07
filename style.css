@@ -114,13 +114,12 @@ main .subtitle h2 ~ h2{
 }
 main #imgCoffee{
 
-  margin-top: 2.5rem;
-  min-width: 64.2rem;
+  margin-top: 4.5rem;
 }
 
 main .bg-effect01{
   position: absolute;
-  bottom: -10rem;
+  bottom: 0;
 }
 main .bg-effect02{
   position: absolute;
