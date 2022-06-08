@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+}
+:root{
+  font-size: 62.5%;
+}
+
+.titlePage{
+  text-align: center;
+  font-size: 3rem;
+  padding-block: 2rem;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.menu .container{
+  border: 1px solid rgb(141, 138, 138);
+  border-radius: .5rem;
+  box-sizing: border-box;
+
+  padding: 1rem;
+  width: 80%;
+}
+
+.menu .container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.2rem;
+}
+.menu .container .content .valueCoffe{
+  opacity: .7;
+}
+.menu .container .description{
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1024px){
+  .menu{
+    flex-direction: row;
+  }
+  .menu .container{
+    width: 40%;
+    height: 13.4rem;
+  }
+}
