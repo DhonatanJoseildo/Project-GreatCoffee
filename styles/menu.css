@@ -5,10 +5,9 @@
   font-size: 62.5%;
 }
 
-.titlePage{
-  text-align: center;
-  font-size: 3rem;
-  padding-block: 2rem;
+body{
+  position: relative;
+  
 }
 
 .menu{

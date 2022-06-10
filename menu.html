@@ -5,39 +5,89 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./menu.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/headerMenu.css">
+  <link rel="stylesheet" href="./styles/menu.css">
   <title>Menu Coffe</title>
 </head>
 <body>
-  <h1 class="titlePage">Menu - Todos os tipos de caffe</h1>
-  <div class="menu">
+  <header>
+    <nav class="navigation-menu">
+      <div class="logoAndOpen">
+        <div class="logo">
+          <a href="./index.html">
+            <picture>
 
-    <div class="container c1">
-      <div class="content">
-        <h3>Café com Leite</h3>
-        <p class="valueCoffe">
-          R$ 4,50
-        </p>
+              <source media="(min-width: 1024px)" srcset="./assets/Logo.svg">
+              <img src="./assets/logo-mobile.svg" alt="">
+              
+
+            </picture>
+          </a>
+        </div>
+
+        <div  class="open-menu">
+          <img src="./assets/openMenu.svg" alt="Abrir Menu de navegação">
+        </div>
       </div>
       
-      <p class="description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ducimus ipsam tenetur distinctio. Quia omnis maxime voluptas esse nisi, ipsa dolore? Voluptas alias est eaque a quas fugiat unde nisi?
-      </p>
+      <div id="menuMobile">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./recompensas.html">Recompensas</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Lojas</a></li>
+        </ul>
+      </div>
+      <button id="getCoffee">
+        <p>
+          PEGAR MEU CAFÉ
+        </p>
+        <div class="img-get-coffee">
+          <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.414 12.207L7.121 6.49997L1.414 0.792969L0 2.20697L4.293 6.49997L0 10.793L1.414 12.207Z" fill="white"/>
+          </svg>
+        </div>
+      </button>
       
-    </div>
+    </nav>
+  </header>
 
-    <div class="container c2">
-      <div class="content">
-        <h3>Café expresso</h3>
-        <p class="valueCoffe">
-          R$ 4,00
+  <main>
+    <div class="title">
+      <h1> Menu - Todos os tipos de caffe</h1>
+    </div>
+    <div class="menu">
+  
+      <div class="container c1">
+        <div class="content">
+          <h3>Café com Leite</h3>
+          <p class="valueCoffe">
+            R$ 4,50
+          </p>
+        </div>
+        
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ducimus ipsam tenetur distinctio. Quia omnis maxime voluptas esse nisi, ipsa dolore? Voluptas alias est eaque a quas fugiat unde nisi?
+        </p>
+        
+      </div>
+  
+      <div class="container c2">
+        <div class="content">
+          <h3>Café expresso</h3>
+          <p class="valueCoffe">
+            R$ 4,00
+          </p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quidem accusantium eum libero, veritatis illo ducimus. Voluptas, minima reiciendis! Doloribus excepturi a ratione eveniet, dolor maiores aperiam. Asperiores, illum.
         </p>
       </div>
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quidem accusantium eum libero, veritatis illo ducimus. Voluptas, minima reiciendis! Doloribus excepturi a ratione eveniet, dolor maiores aperiam. Asperiores, illum.
-      </p>
+  
     </div>
-
-  </div>
+  </main>
+ 
 </body>
 </html>
