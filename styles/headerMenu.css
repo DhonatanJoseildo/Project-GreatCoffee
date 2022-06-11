@@ -101,20 +101,22 @@ header .navigation-menu .open-menu{
 
   border: 1px solid var(--button);
   border-radius: .6rem;
-  color: var(--text-color);
+  
   background-color: initial;
   cursor: pointer;
 
   position: absolute;
   top: 35rem;
 }
-.navigation-menu button p{
+.navigation-menu button a{
   font-family: Manrope, sans-serif;
   font-weight: 800;
   font-size: 1.1rem;
   line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 @media (min-width: 1024px){
@@ -179,7 +181,7 @@ header .navigation-menu .open-menu{
     padding: 1.1rem 3.8rem;
     position: initial;
   }
-  nav.navigation-menu button p{
+  nav.navigation-menu button a{
     width: 9.6rem;
     height: 1.5rem;
   }
