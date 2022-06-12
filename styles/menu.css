@@ -1,43 +1,94 @@
+main{
+  height: auto;
+}
 main h1{
   width: auto;
 }
-
+header .navigation-menu button{
+  display: none;
+}
 .menu{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 100%;
+
   align-items: center;
   justify-content: center;
+  justify-items: center;
   gap: 1rem;
+
+  margin-bottom: 1rem;
 }
 .menu .container{
-  border: 1px solid rgb(141, 138, 138);
+  border: 1px solid var(--button);
   border-radius: .5rem;
   box-sizing: border-box;
 
   padding: 1rem;
-  width: 80%;
+  width: 90%;
+  height: 100%;
 }
-
+.menu .container:hover{
+  cursor: pointer;
+}
+.menu .container h3{
+  color: var(--text-hover-menu-mobile);
+}
 .menu .container .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 3rem;
+  font-size: 4rem;
+  position: relative;
+
+  padding-bottom: .5rem;
+}
+.menu .container .content::before{
+  content: '';
+  width: 0%;
+  height: .5rem;
+  background-color: #8257E5;
+
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+
+  transition: width 0.3s;
+}
+.menu .container:hover > .content::before{
+  width: 100%;
 }
 .menu .container .content .valueCoffe{
-  opacity: .7;
+  color: var(--text-hover-menu-mobile);
+  opacity: .8;
 }
 .menu .container .description{
   margin-top: 1rem;
   font-size: 1.6rem;
+  color: var(--text-hover-menu-mobile);
 }
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
   .menu{
-    flex-direction: row;
+    grid-template-columns: 40% 40%;
   }
   .menu .container{
-    width: 40%;
-    height: 13.4rem;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px){
+  header .navigation-menu button{
+    display: flex;
+  }
+}
+@media (min-width: 1440px){
+
+  .menu{
+    grid-template-columns: 25% 25% 25%;
+    
+  }
+  .menu .container{
+    width: 100%;
+
   }
 }
