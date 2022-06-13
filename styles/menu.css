@@ -29,6 +29,7 @@ header .navigation-menu button{
 }
 .menu .container:hover{
   cursor: pointer;
+  box-shadow: 3px 3px 6px var(--button), -1px -1px 6px var(--button);
 }
 .menu .container h3{
   color: var(--text-hover-menu-mobile);
@@ -45,7 +46,7 @@ header .navigation-menu button{
 .menu .container .content::before{
   content: '';
   width: 0%;
-  height: .5rem;
+  height: .3rem;
   background-color: #8257E5;
 
   position: absolute;

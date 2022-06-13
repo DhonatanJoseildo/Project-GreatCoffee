@@ -22,6 +22,9 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  height: 96rem;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -29,10 +32,10 @@ main{
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
