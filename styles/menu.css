@@ -26,6 +26,8 @@ header .navigation-menu button{
   padding: 1rem;
   width: 90%;
   height: 100%;
+  
+  position: relative;
 }
 .menu .container:hover{
   cursor: pointer;
@@ -45,7 +47,7 @@ header .navigation-menu button{
 }
 .menu .container .content::before{
   content: '';
-  width: 0%;
+  width: 100%;
   height: .3rem;
   background-color: #8257E5;
 
@@ -53,11 +55,6 @@ header .navigation-menu button{
   top: auto;
   bottom: 0;
   left: 0;
-
-  transition: width 0.3s;
-}
-.menu .container:hover > .content::before{
-  width: 100%;
 }
 .menu .container .content .valueCoffe{
   color: var(--text-hover-menu-mobile);
@@ -67,7 +64,15 @@ header .navigation-menu button{
   margin-top: 1rem;
   font-size: 1.6rem;
   color: var(--text-hover-menu-mobile);
+
 }
+
+.menu .container .buttonChecked{
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+} 
+
 
 @media (min-width: 768px){
   .menu{
@@ -80,6 +85,22 @@ header .navigation-menu button{
 @media (min-width: 1024px){
   header .navigation-menu button{
     display: flex;
+  }
+
+  .menu .container .buttonChecked{
+    display: none;
+  }
+  .menu .container:hover > .buttonChecked{
+    display: initial;
+  }
+  .menu .container .content::before{
+    width: 0%;
+    height: .3rem;
+  
+    transition: width 0.3s;
+  }
+  .menu .container:hover > .content::before{
+    width: 100%;
   }
 }
 @media (min-width: 1440px){

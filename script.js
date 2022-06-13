@@ -1,5 +1,8 @@
 const menuWrapper = document.querySelector('.open-menu')
 let imgOpenMenu = document.querySelector('.open-menu img')
+
+const checkContentMenu = document.querySelectorAll('main .menu .container')
+
 menuWrapper.addEventListener('click', openMenu)
 
 function openMenu() {
@@ -14,4 +17,14 @@ function openMenu() {
   
   
 }
-const logoImg = document.querySelector('nav.navigation-menu .logo img')
+console.log(checkContentMenu)
+function addCheckMenu() {
+  checkContentMenu.forEach(element => {
+    element.innerHTML += "<span class='buttonChecked'>" + 
+    "<img src='./assets/checked.svg' alt='Imagem de Checked para compra de café'>"+
+    "</span>"
+    return element
+  });
+  
+}
+addCheckMenu()
