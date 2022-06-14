@@ -30,7 +30,7 @@ header .navigation-menu .open-menu{
   cursor: pointer;
 }
 
-/*=========== Menu-Mobile ==============*/
+/*============ MOBILE MENU ============*/
 
 .navigation-menu #menuMobile{
   position: absolute;
@@ -122,6 +122,7 @@ header .navigation-menu .open-menu{
   text-decoration: none;
 }
 
+/*============ MEDIA / RESPONSIVE ============*/
 @media (min-width: 1024px){
   nav.navigation-menu{
     align-items: center;

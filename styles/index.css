@@ -1,4 +1,4 @@
-
+/*============ MAIN ============*/
 main .subtitle{
   display: flex;
   flex-direction: column;
@@ -29,6 +29,8 @@ main .subtitle h2 ~ h2{
   -1px 1px 0 var(--button), 
   1px 1px 0 var(--button);
 }
+
+/*============ BACKGROUND EFFECT / IMG ============*/
 main #imgCoffee{
 
   margin-top: 4.5rem;
@@ -52,8 +54,7 @@ main .bg-effect01 svg, main .bg-effect02 svg{
   
 }
 
-/*========== media ===============*/
-
+/*============ MEDIA / RESPONSIVE ============*/
 @media (min-width: 1024px){
 
   main .title{

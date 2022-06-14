@@ -1,12 +1,32 @@
+/*========= EFFECT BACKGROUND ================*/
+body .bg-effect01{
+  position: absolute;
+  top: 15rem;
+}
+body .bg-effect02{
+  position: absolute;
+  bottom: 0;
+}
+body .bg-effect01 svg, body .bg-effect02 svg{
+  width: 28rem;
+  height: 32.1rem;
+
+  background-color: #996DFF;
+  filter: blur(250px);
+}
+/*========= ADJUSTMENT MENU ==================*/
+header .navigation-menu button{
+  display: none;
+}
+
+/*============= MAIN / MENU ================*/
 main{
   height: auto;
 }
 main h1{
   width: auto;
 }
-header .navigation-menu button{
-  display: none;
-}
+
 .menu{
   display: grid;
   grid-template-columns: 100%;
@@ -73,7 +93,7 @@ header .navigation-menu button{
   right: .5rem;
 } 
 
-
+/*============ MEDIA / RESPONSIVE ============*/
 @media (min-width: 768px){
   .menu{
     grid-template-columns: 40% 40%;
@@ -82,6 +102,7 @@ header .navigation-menu button{
     width: 100%;
   }
 }
+
 @media (min-width: 1024px){
   header .navigation-menu button{
     display: flex;
@@ -102,7 +123,22 @@ header .navigation-menu button{
   .menu .container:hover > .content::before{
     width: 100%;
   }
+  body .bg-effect01{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  body .bg-effect02{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  body .bg-effect01 svg, body .bg-effect02 svg{
+
+    filter: blur(200px);
+  }
 }
+
 @media (min-width: 1440px){
 
   .menu{
