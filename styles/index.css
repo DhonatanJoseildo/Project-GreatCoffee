@@ -1,3 +1,6 @@
+nav.navigation-menu button{
+  display: flex;
+}
 /*============ MAIN ============*/
 main .subtitle{
   display: flex;
@@ -38,6 +41,7 @@ main #imgCoffee{
 
 main .bg-effect01{
   position: absolute;
+  top: auto;
   bottom: 0;
 }
 main .bg-effect02{

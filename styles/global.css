@@ -30,7 +30,7 @@ body{
 
 main{
   position: absolute;
-  top: 0;
+  top: 11rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -40,7 +40,7 @@ main{
 }
 
 main .title{
-  margin-top: 18.4rem;
+  margin-top: 7.4rem;
 }
 main h1{
   width: 37.3rem;
@@ -53,4 +53,37 @@ main h1{
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+/*========= EFFECT BACKGROUND ================*/
+body .bg-effect01{
+  position: absolute;
+  top: 15rem;
+}
+body .bg-effect02{
+  position: absolute;
+  bottom: 0;
+}
+body .bg-effect01 svg, body .bg-effect02 svg{
+  width: 28rem;
+  height: 32.1rem;
+
+  background-color: #996DFF;
+  filter: blur(250px);
+}
+@media (min-width: 1024px){
+  body .bg-effect01{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  body .bg-effect02{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  body .bg-effect01 svg, body .bg-effect02 svg{
+
+    filter: blur(200px);
+  }
 }
