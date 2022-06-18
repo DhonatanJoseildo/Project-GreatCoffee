@@ -1,0 +1,80 @@
+
+
+body main{
+  display: grid;
+  grid-template-columns: 27.2rem 1fr;
+  gap: 3.2rem;
+  padding-inline: 3.2rem;
+  color: var(--text-hover-menu-mobile);
+  
+  margin: 0 auto;
+  box-sizing: content-box;
+  max-width: 120rem;
+}
+main section.aboutGiftCard{
+  border-right: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+section.aboutGiftCard ul{
+  max-width: 90%;
+  margin: auto;
+  list-style: decimal;
+}
+section.aboutGiftCard ul li{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+section.aboutGiftCard h2{
+  font-size: 2.4rem;
+  margin-block: 1.5rem;
+}
+section.aboutGiftCard h3{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+section.aboutGiftCard p{
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+section.aboutGiftCard .cardWorks p, section.aboutGiftCard .discountCard p{
+  margin: 1.6rem 0;
+}
+
+/*========== CARDS DESCOUNTS ============*/
+section.giftCards h2{
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+ul.cards{
+  list-style: none;
+}
+ul.cards .card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 2.4rem;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: .5rem;
+}
+.card .discount{
+  width: 12.8rem;
+  margin-right: 2.4rem;
+}
+.card .valueDiscount{
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+.card .typeOfDiscount{
+  font-size: 1.8rem;
+}
+.card .cardDescription{
+  width: 40rem;
+  flex-grow: 1;
+  margin-right: 2.4rem;
+}
+.cardDescription h3{
+  font-size: 2.2rem;
+}
