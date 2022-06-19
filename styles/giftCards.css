@@ -1,4 +1,7 @@
-
+body{
+  font-family: Manrope;
+  min-height: auto;
+}
 
 body main{
   display: grid;
@@ -15,6 +18,7 @@ main section.aboutGiftCard{
   display: flex;
   flex-direction: column;
   height: 100%;
+  grid-row: 1;
 }
 section.aboutGiftCard ul{
   max-width: 90%;
@@ -34,7 +38,7 @@ section.aboutGiftCard h3{
   margin-bottom: .5rem;
 }
 section.aboutGiftCard p{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.6rem;
 }
 section.aboutGiftCard .cardWorks p, section.aboutGiftCard .discountCard p{
@@ -42,9 +46,6 @@ section.aboutGiftCard .cardWorks p, section.aboutGiftCard .discountCard p{
 }
 
 /*========== CARDS DESCOUNTS ============*/
-section.giftCards{
-  height: 100%;
-}
 section.giftCards h2{
   font-size: 2.2rem;
   line-height: 3.2rem;
@@ -54,9 +55,11 @@ ul.cards{
   list-style: none;
 }
 ul.cards .card{
-  display: flex;
+  display: grid;
+  grid-template-areas: 'offer description description description desconto desconto';
   align-items: center;
   justify-content: space-between;
+  justify-items: center;
   padding: 1.6rem 2.4rem;
   margin-bottom: 1rem;
   background-color: rgba(255, 255, 255, 0.2);
@@ -64,7 +67,7 @@ ul.cards .card{
 }
 .card .discount{
   width: 12.8rem;
-  margin-right: 2.4rem;
+  grid-area: offer;
 }
 .card .valueDiscount{
   font-size: 3.2rem;
@@ -77,23 +80,21 @@ ul.cards .card{
 }
 .card .cardDescription{
   width: 40rem;
-  flex-grow: 1;
   margin-right: 2.4rem;
+  grid-area: description;
 }
 .cardDescription h3{
   font-size: 2.2rem;
 }
 .card .buttonDiscount{
-  flex-grow: 1;
-  flex-shrink: 0;
-  width: 24rem;
+  
+  grid-area: desconto;
 }
 .card .buttonGetDiscount{
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 
   width: 25.6rem;
   height: 4.8rem;
@@ -124,4 +125,31 @@ ul.cards .card{
   color: white;
   margin-top: 1.6rem;
   
+}
+
+/*======= MEDIA / RESPONSIVE =======*/
+
+@media (max-width: 1220px){
+  body main{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    width: 90%;
+  }
+  .giftCards ul.cards .card{
+    grid-template-areas: 'offer offer description description description description' 'desconto desconto desconto desconto desconto desconto';
+  }
+  main section.aboutGiftCard{
+    grid-row: 2;
+  }
+  .cards .card .buttonDiscount{
+    width: 100%;
+  }
+  .cards .card .buttonGetDiscount{
+    width: 100%;
+  }
+}
+@media (max-width: 680px){
+  .cards .card .buttonDiscount{
+    width: 60%;
+  }
 }
