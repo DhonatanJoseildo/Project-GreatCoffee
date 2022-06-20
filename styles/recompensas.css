@@ -1,0 +1,18 @@
+main h1{
+  width: auto;
+}
+.aboutRewards{
+  width: 90%;
+  height: 100%;
+
+}
+.aboutRewards .infoAbout{
+  margin-bottom: 10rem;
+}
+.aboutRewards h2{
+  font-size: 2.8rem;
+}
+.aboutRewards p{
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
